@@ -27,7 +27,10 @@ int cb(int j)
 {
 	return j*j*j;
 }
-
+float inv(int i)
+{ 
+    return 1.0/i;   
+}
 int main() {
     int a, b;
     char operation;
@@ -77,12 +80,12 @@ int main() {
             case '#':
                 printf("Enter an integer: ");
                 scanf("%d", &a);
-                printf("The result od %d ^ 3 is %d\n", a, cd(a));
+                printf("The result of %d ^ 3 is %d\n", a, cd(a));
                 break;
             case 'i':
                 printf("Enter an integer: ");
                 scanf("%d", &a);
-                printf("Will be implemented soon...\n");
+                printf("The result of 1/%d is %d\n", a, inv(a));
                 break;
             default:
                 printf("Invalid operation. Please try again.\n");
